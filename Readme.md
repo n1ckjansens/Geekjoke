@@ -9,7 +9,7 @@ Geekjoke.com - Daily IT jokes
 1. React
 2. TypeScript
 4. Webpack
-6. SocketIo client (for chats)
+6. SocketIo
 
 **Backend**:
 
@@ -20,5 +20,5 @@ Geekjoke.com - Daily IT jokes
 5. MongoDB
 6. Redis
 7. RabbitMQ
-8. SocketIo (for chats)
+8. SocketIo
 9. Yandex.Cloud
