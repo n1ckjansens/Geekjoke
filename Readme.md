@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/n1ckjansens/Geekjoke.svg?branch=main)](https://travis-ci.com/n1ckjansens/Geekjoke)
+[![Build Status](https://travis-ci.com/n1ckjansens/Geekjoke.svg?branch=main)](https://travis-ci.com/n1ckjansens/Geekjoke) [![codecov](https://codecov.io/gh/n1ckjansens/Geekjoke/branch/main/graph/badge.svg?token=9E4FOMAHLQ)](https://codecov.io/gh/n1ckjansens/Geekjoke)
 
 Geekjoke.com - Daily IT jokes
 
