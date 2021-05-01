@@ -8,7 +8,7 @@ Geekjoke.com - Daily IT jokes
 
 1. React
 2. TypeScript
-4. Webpack
+4. Webpacknnn
 6. SocketIo
 
 **Backend**:
