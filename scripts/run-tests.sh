@@ -4,16 +4,17 @@ FRONTEND_DIRECTORY="./frontend";
 
 if [ -d "$FRONTEND_DIRECTORY" ]; then
     cd $FRONTEND_DIRECTORY
-    npm run lint && 
-    npm run build && 
-    npm run test
+    npm install || { echo 'Installling dependencies failed' ; exit 1; }
+    npm run lint || { echo 'Linters failed' ; exit 1; }
+    npm run build || { echo 'Production build failed' ; exit 1; }
+    npm run test || { echo 'Tests failed' ; exit 1; }
 fi
 
-cd ../
-
 if [ -d "$BACKEND_DIRECTORY" ]; then
+    cd ../
     cd $BACKEND_DIRECTORY
-    npm run lint && 
-    npm run build && 
-    npm run test
+    npm install || { echo 'Installling dependencies failed' ; exit 1; }
+    npm run lint || { echo 'Linters failed' ; exit 1; }
+    npm run build || { echo 'Production build failed' ; exit 1; }
+    npm run test || { echo 'Tests failed' ; exit 1; }
 fi
