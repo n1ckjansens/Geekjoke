@@ -12,10 +12,10 @@ type:tests:
   - '*.test.js'
 
 theme:docs:
-  - "*/README.md"
-  - "*/LICENSE"
-  - "*/CONTRIBUTING.md"
-  - "*/CODE_OF_CONDUCT.md"
+  - "README.md"
+  - "LICENSE"
+  - "CONTRIBUTING.md"
+  - "CODE_OF_CONDUCT.md"
 
 frontend: 
   - "frontend/**/*"
