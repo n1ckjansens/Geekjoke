@@ -8,6 +8,7 @@ if [ -d "$FRONTEND_DIRECTORY" ]; then
     npm run lint || { echo 'Linters failed' ; exit 1; }
     npm run build || { echo 'Production build failed' ; exit 1; }
     npm run test || { echo 'Tests failed' ; exit 1; }
+    codecov
 fi
 
 if [ -d "$BACKEND_DIRECTORY" ]; then
@@ -17,4 +18,5 @@ if [ -d "$BACKEND_DIRECTORY" ]; then
     npm run lint || { echo 'Linters failed' ; exit 1; }
     npm run build || { echo 'Production build failed' ; exit 1; }
     npm run test || { echo 'Tests failed' ; exit 1; }
+    codecov
 fi
