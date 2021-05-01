@@ -1,0 +1,24 @@
+type:build:
+  - ".github/**/*"
+  - "*/.gitignore"
+  - "travis.yml"
+  - "scripts/**/*"
+
+dependencies:
+  - "*/package.json"
+  - "*/package-lock.json"
+
+type:tests:
+  - '*.test.js'
+
+theme:docs:
+  - "*/README.md"
+  - "*/LICENSE"
+  - "*/CONTRIBUTING.md"
+  - "*/CODE_OF_CONDUCT.md"
+
+frontend: 
+  - "frontend/**/*"
+
+backend: 
+  - "backend/**/*"
