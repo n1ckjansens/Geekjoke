@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "webpack serve --mode development --config ./webpack/webpack.config.dev.ts",
 		"build": "webpack --mode production --config ./webpack/webpack.config.prod.ts",
-		"lint": "npx eslint . && npx stylelint **/*.scss",
+		"lint": "npx eslin t . && npx stylelint **/*.scss",
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"test:coverage": "jest --coverage"
