@@ -9,6 +9,9 @@ import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import path from 'path';
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
+const DOCKER_PORT = process.env.DOCKER_PORT
+	? Number(process.env.DOCKER_PORT)
+	: 9000;
 
 interface Configuration extends WebpackConfiguration {
 	devServer?: WebpackDevServerConfiguration;
@@ -29,6 +32,7 @@ const webpackConfiguration: Configuration = {
 		host: '0.0.0.0',
 		port: PORT,
 		open: true,
+		public: `0.0.0.0:${DOCKER_PORT}`,
 		publicPath: '/',
 		contentBase: path.resolve(__dirname, '..', 'build'),
 		watchContentBase: true,
@@ -108,6 +112,10 @@ const webpackConfiguration: Configuration = {
 				],
 			},
 		],
+	},
+	watchOptions: {
+		aggregateTimeout: 300,
+		poll: 1000,
 	},
 };
 

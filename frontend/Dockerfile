@@ -8,8 +8,9 @@ RUN npm install
 
 COPY . .
 
-ENV PORT=3000
+ENV PORT=4000
+ENV DOCKER_PORT=9000
 
-EXPOSE 3000
+EXPOSE 4000
 
 CMD ["npm", "run", "dev"]
