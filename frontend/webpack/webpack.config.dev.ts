@@ -8,6 +8,8 @@ import { Configuration as WebpackDevServerConfiguration } from 'webpack-dev-serv
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import path from 'path';
 
+const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
+
 interface Configuration extends WebpackConfiguration {
 	devServer?: WebpackDevServerConfiguration;
 }
@@ -24,8 +26,8 @@ const webpackConfiguration: Configuration = {
 		path: path.resolve(__dirname, '..', 'build'),
 	},
 	devServer: {
-		host: 'localhost',
-		port: 3000,
+		host: '0.0.0.0',
+		port: PORT,
 		open: true,
 		publicPath: '/',
 		contentBase: path.resolve(__dirname, '..', 'build'),
