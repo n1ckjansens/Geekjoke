@@ -1,5 +1,5 @@
-build:
+compile:
 	docker build -t n1ckjansens/geekjoke-frontend .
 
 run:
-	docker run -i -d -p 80:3000 n1ckjansens/geekjoke-frontend
+	docker run -it -v ${PWD}:/frontend -v /frontend/node_modules -p 9000:4000 -e CHOKIDAR_USEPOLLING=true n1ckjansens/geekjoke-frontend
